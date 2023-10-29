@@ -23,6 +23,12 @@ function BookList() {
                 <p>Author of the book: {book.author}</p>
                 <p>Price: Rs.{book.price}</p>
                 <p>Stock: {book.stock}</p>
+                <p>Images: </p>
+                <div className='images'>
+                    {book.images.map((image) => (
+                        <img key={image.id} src={image.image_path} alt="Book"/>
+                    ))}
+                </div>
             </div>
         ))}
     </div>
