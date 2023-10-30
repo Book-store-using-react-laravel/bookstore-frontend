@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Addbook from './Addbook';
+import BookList from './BookList';
 
 function LeftTabs() {
     return (
@@ -29,7 +30,9 @@ function LeftTabs() {
                 </Col>
                 <Col sm={9}>
                     <Tab.Content className='tabcontent'>
-                        <Tab.Pane eventKey="first">First tab content</Tab.Pane>
+                        <Tab.Pane eventKey="first">
+                            <BookList/>
+                        </Tab.Pane>
                         <Tab.Pane eventKey="second">
                             <Addbook/>
                         </Tab.Pane>

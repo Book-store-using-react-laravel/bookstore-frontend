@@ -54,3 +54,43 @@ h4 {
   background-color: #65451F;
   padding: 20px;
 }
+
+/*book card */
+.book-list{
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.card-body{
+  margin: 0;
+  padding: 0;
+}
+
+.author,
+.price,
+.stock {
+  font-size: 12px;
+  margin: 0;
+
+}
+
+.book-card {
+  margin: 5px;
+  padding-top: 5px; /* Add a margin to create spacing between cards */
+}
+
+.card-btn{
+  padding: 0px 5px;
+  margin-bottom: 10px;
+  color: #C8AE7D;
+  background-color: #000;
+  border: #65451F;
+  box-shadow: #65451F 1px 1px;
+}
+
+
+/* .price,
+.stock {
+  display: inline-block;
+  margin-right: 4rem;
+} */
