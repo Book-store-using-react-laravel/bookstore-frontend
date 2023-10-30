@@ -1,0 +1,251 @@
+[
+    {
+        "id": 9,
+        "title": "Harry Porter",
+        "author": "J. K. Rowling",
+        "price": "1990.00",
+        "stock": 10,
+        "created_at": "2023-10-30T14:02:29.000000Z",
+        "updated_at": "2023-10-30T14:02:29.000000Z",
+        "images": [
+            {
+                "id": 7,
+                "book_id": 9,
+                "image_path": "book_images/wFFyrw2pMGPvSBGJsb0jDYxwHUl6DiTa1Whv3PLr.jpg",
+                "created_at": "2023-10-30T14:02:29.000000Z",
+                "updated_at": "2023-10-30T14:02:29.000000Z"
+            },
+            {
+                "id": 8,
+                "book_id": 9,
+                "image_path": "book_images/XmxiaxENUEZuHpgtR4Hn6msTdrSNH3bdrOZOUlhW.jpg",
+                "created_at": "2023-10-30T14:02:29.000000Z",
+                "updated_at": "2023-10-30T14:02:29.000000Z"
+            },
+            {
+                "id": 9,
+                "book_id": 9,
+                "image_path": "book_images/bSgGsJRyOjSyf0BU73SCebXwRAHTvA1u2jYDWMqM.jpg",
+                "created_at": "2023-10-30T14:02:29.000000Z",
+                "updated_at": "2023-10-30T14:02:29.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "title": "Anne Frank's Diary",
+        "author": "Anne Frank",
+        "price": "1090.00",
+        "stock": 15,
+        "created_at": "2023-10-30T14:46:47.000000Z",
+        "updated_at": "2023-10-30T14:46:47.000000Z",
+        "images": [
+            {
+                "id": 10,
+                "book_id": 10,
+                "image_path": "book_images/NMvYT1SDUXSzwVTnZCoPnkz3PFgVHOboE1S4e18O.jpg",
+                "created_at": "2023-10-30T14:46:47.000000Z",
+                "updated_at": "2023-10-30T14:46:47.000000Z"
+            },
+            {
+                "id": 11,
+                "book_id": 10,
+                "image_path": "book_images/tt3tDuBmnjxkCXmbol574R18GcSAUa7o4RQymBot.jpg",
+                "created_at": "2023-10-30T14:46:47.000000Z",
+                "updated_at": "2023-10-30T14:46:47.000000Z"
+            },
+            {
+                "id": 12,
+                "book_id": 10,
+                "image_path": "book_images/Zg1KZDkbpIQL9OLKczqBVb0ba7lDDfjtJWfbCKTc.jpg",
+                "created_at": "2023-10-30T14:46:47.000000Z",
+                "updated_at": "2023-10-30T14:46:47.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "title": "Girl Last Seen",
+        "author": "Nina Laurin",
+        "price": "1000.00",
+        "stock": 3,
+        "created_at": "2023-10-30T14:50:00.000000Z",
+        "updated_at": "2023-10-30T14:50:00.000000Z",
+        "images": [
+            {
+                "id": 13,
+                "book_id": 11,
+                "image_path": "book_images/8bWfiP83qsYe7ybL1txSd06CiPXlNpsao5VmbKsP.jpg",
+                "created_at": "2023-10-30T14:50:00.000000Z",
+                "updated_at": "2023-10-30T14:50:00.000000Z"
+            },
+            {
+                "id": 14,
+                "book_id": 11,
+                "image_path": "book_images/xusTVvr7RGJ9LlNUuymLjSCSeEEFz7qqueg56AKm.jpg",
+                "created_at": "2023-10-30T14:50:00.000000Z",
+                "updated_at": "2023-10-30T14:50:00.000000Z"
+            },
+            {
+                "id": 15,
+                "book_id": 11,
+                "image_path": "book_images/HmOQlpZPQJDj6mfFmwmHKGBpZhcRNJThaZBHtkDp.jpg",
+                "created_at": "2023-10-30T14:50:00.000000Z",
+                "updated_at": "2023-10-30T14:50:00.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "title": "The Lunar Chronicles",
+        "author": "Marissa Meyer",
+        "price": "1500.00",
+        "stock": 7,
+        "created_at": "2023-10-30T14:55:30.000000Z",
+        "updated_at": "2023-10-30T14:55:30.000000Z",
+        "images": [
+            {
+                "id": 16,
+                "book_id": 12,
+                "image_path": "book_images/WUsXnzEhorgkgaOY7s8zyZ6BQ27gnlmMBH9Iugpl.jpg",
+                "created_at": "2023-10-30T14:55:30.000000Z",
+                "updated_at": "2023-10-30T14:55:30.000000Z"
+            },
+            {
+                "id": 17,
+                "book_id": 12,
+                "image_path": "book_images/XUErnu4yVxq4lztQvdnofv5rB8MAknQCr69pe3rt.jpg",
+                "created_at": "2023-10-30T14:55:30.000000Z",
+                "updated_at": "2023-10-30T14:55:30.000000Z"
+            },
+            {
+                "id": 18,
+                "book_id": 12,
+                "image_path": "book_images/eyAZ6Wwz2DZEVk526W4y4zmQjP1Lbolg7oSggijs.jpg",
+                "created_at": "2023-10-30T14:55:30.000000Z",
+                "updated_at": "2023-10-30T14:55:30.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "title": "Sherlock Holmes",
+        "author": "Arthur Conan Doyle",
+        "price": "1350.00",
+        "stock": 10,
+        "created_at": "2023-10-30T14:59:46.000000Z",
+        "updated_at": "2023-10-30T14:59:46.000000Z",
+        "images": [
+            {
+                "id": 19,
+                "book_id": 13,
+                "image_path": "book_images/GGtM9jCRGfJcv3xtoTHV8ZKAZ3B6JXrAcuYfZNXr.jpg",
+                "created_at": "2023-10-30T14:59:46.000000Z",
+                "updated_at": "2023-10-30T14:59:46.000000Z"
+            },
+            {
+                "id": 20,
+                "book_id": 13,
+                "image_path": "book_images/e5et8WnEnIkrxqOfxG4y0l7hEu41zvx5M7VEIQSo.jpg",
+                "created_at": "2023-10-30T14:59:46.000000Z",
+                "updated_at": "2023-10-30T14:59:46.000000Z"
+            },
+            {
+                "id": 21,
+                "book_id": 13,
+                "image_path": "book_images/ArMI4PJvF4rC4I07y39iAX7Ua3vqO9up1LsrNKuI.jpg",
+                "created_at": "2023-10-30T14:59:46.000000Z",
+                "updated_at": "2023-10-30T14:59:46.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "title": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "price": "1030.00",
+        "stock": 5,
+        "created_at": "2023-10-30T15:51:40.000000Z",
+        "updated_at": "2023-10-30T15:51:40.000000Z",
+        "images": [
+            {
+                "id": 22,
+                "book_id": 14,
+                "image_path": "book_images/D6kGdVd5dp19u7pnUYEASga0UOlykCHXTJkPoVnM.jpg",
+                "created_at": "2023-10-30T15:51:40.000000Z",
+                "updated_at": "2023-10-30T15:51:40.000000Z"
+            },
+            {
+                "id": 23,
+                "book_id": 14,
+                "image_path": "book_images/0HPAufUh0osz752YAKErIEQItQGE6ivBnOk6NxzS.jpg",
+                "created_at": "2023-10-30T15:51:40.000000Z",
+                "updated_at": "2023-10-30T15:51:40.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "title": "The Jungle Book",
+        "author": "Diane Wright Landolf",
+        "price": "950.00",
+        "stock": 5,
+        "created_at": "2023-10-30T15:59:24.000000Z",
+        "updated_at": "2023-10-30T15:59:24.000000Z",
+        "images": [
+            {
+                "id": 24,
+                "book_id": 15,
+                "image_path": "book_images/fleZHeRUVAbKcSB5uylT49Rug63dU4LEJUYkaEBT.jpg",
+                "created_at": "2023-10-30T15:59:25.000000Z",
+                "updated_at": "2023-10-30T15:59:25.000000Z"
+            },
+            {
+                "id": 25,
+                "book_id": 15,
+                "image_path": "book_images/vLVYJlCvYZpCOCH3jzAZAv28NHk6J6jcjhXj4kp7.jpg",
+                "created_at": "2023-10-30T15:59:25.000000Z",
+                "updated_at": "2023-10-30T15:59:25.000000Z"
+            },
+            {
+                "id": 26,
+                "book_id": 15,
+                "image_path": "book_images/7dlW2eihHyMdFJchRaUE0JJQlR23zxoNFzMLVNZO.jpg",
+                "created_at": "2023-10-30T15:59:25.000000Z",
+                "updated_at": "2023-10-30T15:59:25.000000Z"
+            }
+        ]
+    },
+    {
+        "id": 16,
+        "title": "Diary of a Wimpy Kid",
+        "author": "Jeff Kinney",
+        "price": "1750.00",
+        "stock": 10,
+        "created_at": "2023-10-30T16:03:33.000000Z",
+        "updated_at": "2023-10-30T16:03:33.000000Z",
+        "images": [
+            {
+                "id": 27,
+                "book_id": 16,
+                "image_path": "book_images/OLQVRjOoF7GRQxp6IRtOthJVGmcjSicFqXoL3VD0.jpg",
+                "created_at": "2023-10-30T16:03:33.000000Z",
+                "updated_at": "2023-10-30T16:03:33.000000Z"
+            },
+            {
+                "id": 28,
+                "book_id": 16,
+                "image_path": "book_images/nRjNhC8nUmEXTZwb3JIDQcvr3fTarKqbGTgwBm6L.jpg",
+                "created_at": "2023-10-30T16:03:33.000000Z",
+                "updated_at": "2023-10-30T16:03:33.000000Z"
+            },
+            {
+                "id": 29,
+                "book_id": 16,
+                "image_path": "book_images/pX3x780OwqMP63lKqp0UtahzhaQe9vAy6FBQkdl2.jpg",
+                "created_at": "2023-10-30T16:03:33.000000Z",
+                "updated_at": "2023-10-30T16:03:33.000000Z"
+            }
+        ]
+    }
+]
