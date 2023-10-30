@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import BookList from './components/BookList';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import LeftTabs from './components/LeftTabs';
 
 
