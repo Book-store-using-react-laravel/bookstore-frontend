@@ -26,8 +26,10 @@ function BookCard({book}) {
 
     return (
         <>
-        <Card className='book-card' style={{ width: '15rem' }}>
-            <Card.Img variant="top" src={process.env.PUBLIC_URL + 'images/' + images[currentImageIndex]} />
+        <Card className='book-card' style={{ width: '15rem', height: '22rem'}}>
+            <div className='image-holder'>
+                <Card.Img className='card-image' variant="top" src={process.env.PUBLIC_URL + 'images/' + images[currentImageIndex]} />
+            </div>
 
             <Card.Body className='card-body'>
                 <Card.Title>{book.title}</Card.Title>
