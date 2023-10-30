@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
+import Alert from 'react-bootstrap/Alert';
 import axios from 'axios';
 import BookForm from './bookForm';
+
 function Addbook() {
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
     const [price, setPrice] = useState('');
     const [stock, setStock] = useState('');
     const [imageFiles, setImageFiles] = useState([]);
+    const [showSuccessAlert, setShowSuccessAlert] = useState(false); // State for success alert
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -27,16 +30,30 @@ function Addbook() {
                 headers: { 'Content-Type': 'multipart/form-data' },
             });
 
-            // Handle the response, e.g., show a success message or redirect to the book list.
+            // Show the success alert
+            setShowSuccessAlert(true);
+            
+            // Clear the form fields after success
+            setTitle('');
+            setAuthor('');
+            setPrice('');
+            setStock('');
+            setImageFiles([]);
+
             console.log('Book created:', response.data);
         } catch (error) {
-            // Handle errors, e.g., display error messages to the user.
+            // Handle errors
             console.error('Error creating book:', error);
         }
     }
 
     return (
         <>
+            {showSuccessAlert && (
+                <Alert variant='success' onClose={() => setShowSuccessAlert(false)} dismissible>
+                    A book is successfully added!
+                </Alert>
+            )}
             <BookForm
                 title={title}
                 setTitle={setTitle}

@@ -7,13 +7,13 @@ function BookCard({book}) {
 
     // hold book images in array
     const images = book.images.map((image) => image.image_path);
-    console.log(images);
+    // console.log(images);
 
     // switch images
     const nextImage = useCallback(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, [images]);
-    console.log("next image: ",nextImage);
+    // console.log("next image: ",nextImage);
 
     useEffect(() => {
         const imageInterval = setInterval(nextImage, 3000);
