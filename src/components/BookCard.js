@@ -15,17 +15,18 @@ function BookCard({book}) {
     }, [images]);
 
     useEffect(() => {
-        const imageInterval = setInterval(nextImage, 3000);
+        const imageInterval = setInterval(nextImage, 5000);
 
         return () => {
             clearInterval(imageInterval);
         };
     }, [nextImage]);
 
+
     // console.log(images[currentImageIndex]);
 
     return (
-        <>
+        <div>
         <Card className='book-card' style={{ width: '15rem', height: '22rem'}}>
             <div className='image-holder'>
                 <Card.Img className='card-image' variant="top" src={process.env.PUBLIC_URL + 'images/' + images[currentImageIndex]} />
@@ -45,7 +46,7 @@ function BookCard({book}) {
                 <Button className='card-btn'>Issue</Button>
             </Card.Body>
         </Card>
-        </>
+        </div>
         
     );
 }
