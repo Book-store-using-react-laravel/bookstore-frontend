@@ -73,7 +73,7 @@ h4 {
 
 
 .card-body{
-  margin: 0;
+  margin: 0px 10px 0px 10px;
   padding: 0;
 }
 
@@ -104,15 +104,21 @@ h4 {
 .book-card {
   margin: 5px;
   padding-top: 5px; /* Add a margin to create spacing between cards */
+  background-color: #C8AE7D;
+  border-radius: 0.5rem;
+  box-shadow: #65451F 2px 2px ;
+  border: #000 ;
 }
 
 .card-btn{
   padding: 0px 5px;
   margin-bottom: 10px;
+  margin-left: 10px;
   color: #C8AE7D;
   background-color: #000;
   border: #65451F;
   box-shadow: #65451F 1px 1px;
+  width: fit-content;
 }
 
 

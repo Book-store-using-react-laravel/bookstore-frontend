@@ -43,8 +43,8 @@ function BookCard({book}) {
                             <p className="stock">Stock : {book.stock}</p>
                         </div>
                     </div>
-                <Button className='card-btn'>Issue</Button>
             </Card.Body>
+                <Button className='card-btn'>Issue</Button>
         </Card>
         </div>
         
