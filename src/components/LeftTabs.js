@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Addbook from './Addbook';
 import BookList from './BookList';
+import Stock from './BooksStock';
 
 function LeftTabs() {
     return (
@@ -18,10 +19,10 @@ function LeftTabs() {
                             <Nav.Link eventKey="second">Add Book</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="third">Update Book</Nav.Link>
+                            <Nav.Link eventKey="third">Book Stock</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link eventKey="fourth">Book Stock</Nav.Link>
+                            <Nav.Link eventKey="fourth">Book Issue</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link eventKey="fifth">Settings</Nav.Link>
@@ -36,7 +37,9 @@ function LeftTabs() {
                         <Tab.Pane eventKey="second">
                             <Addbook/>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="third">Third tab content</Tab.Pane>
+                        <Tab.Pane eventKey="third">
+                            <Stock/>
+                        </Tab.Pane>
                         <Tab.Pane eventKey="fourth">Fourth tab content</Tab.Pane>
                         <Tab.Pane eventKey="fifth">Fifth tab content</Tab.Pane>
                     </Tab.Content>
