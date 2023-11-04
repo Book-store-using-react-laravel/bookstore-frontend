@@ -27,6 +27,7 @@ function LeftTabs() {
                         <Nav.Item>
                             <Nav.Link eventKey="fifth">Settings</Nav.Link>
                         </Nav.Item>
+                        
                     </Nav>
                 </Col>
                 <Col sm={9}>
@@ -36,6 +37,7 @@ function LeftTabs() {
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
                             <Addbook/>
+                            
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
                             <Stock/>

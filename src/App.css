@@ -1,5 +1,6 @@
 /*color palette: https://colorhunt.co/palette/eac696c8ae7d76582765451f */
 
+
 /* App.css */
 
 .cont {
@@ -132,5 +133,13 @@ h4 {
 
 .custom-table {
   margin: 20px;
-  padding: 10px;
 }
+
+/* .search-book{
+  background-color: #65451F;
+} */
+
+/* .search-book .bg-brown:hover {
+  background-color: #65451F; 
+} */
+

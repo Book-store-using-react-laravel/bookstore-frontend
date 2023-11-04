@@ -1,4 +1,6 @@
+import { Button, Spacer, Input } from '@nextui-org/react';
 import React, { useEffect, useState, useRef } from 'react';
+import { Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 
 function Stocktable({ books }) {
@@ -10,12 +12,21 @@ function Stocktable({ books }) {
   const pageSize = 1; // Number of rows to load at a time
   const [currentPage, setCurrentPage] = useState(1);
 
+  // add state to search term
+  const [searchTerm, setSearchTerm] = useState('');
+
   // Whenever the books prop changes, update the visibleBooks state
   useEffect(() => {
     if (books.length > 0) {
-      setVisibleBooks(books.slice(0, currentPage * pageSize));
+
+      // Filter the books based on the search term
+      const filteredBooks = books.filter((book) =>
+        book.title.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+
+      setVisibleBooks(filteredBooks.slice(0, currentPage * pageSize));
     }
-  }, [books, currentPage]);
+  }, [books, currentPage, searchTerm]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(async (entries) => {
@@ -42,10 +53,42 @@ function Stocktable({ books }) {
   }, [currentPage, books]);
 
   return (
-    <div>
+    <Container>
 
       {/* search bar */}
-      
+      <Spacer y={4} />
+      <Input
+      isClearable
+      radius="lg"
+      classNames={{
+        input: [
+          "bg-transparent",
+          "text-black/90 dark:text-white/90",
+          "placeholder:text-default-700/50 dark:placeholder:text-white/60",
+        ],
+        innerWrapper: "bg-transparent",
+        inputWrapper: [
+          "shadow-xl",
+          "bg-default-200/50",
+          "dark:bg-default/60",
+          "backdrop-blur-xl",
+          "backdrop-saturate-200",
+          "hover:bg-default-200/70",
+          "dark:hover:bg-default/70",
+          "group-data-[focused=true]:bg-default-200/50",
+          "dark:group-data-[focused=true]:bg-default/60",
+          "!cursor-text",
+        ],
+      }}
+        size="md"
+        bordered
+        clearable
+        placeholder="Search..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      <Spacer />
+
 
       {/* table */}
       <Table striped borderless hover responsive variant='dark' className="infinite-scroll-container custom-table">
@@ -70,8 +113,16 @@ function Stocktable({ books }) {
               <td>{book.price}</td>
               <td>{book.stock}</td>
               <td>{book.images.length}</td>
-              <td>edit</td>
-              <td>delete</td>
+              <td>
+                <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
+                  Edit
+                </Button>
+              </td>
+              <td>
+                <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
+                  Delete
+                </Button>
+              </td>
             </tr>
           ))}
         </tbody>
@@ -85,7 +136,7 @@ function Stocktable({ books }) {
         </div>
       )}
       <div ref={bottom} />
-    </div>
+    </Container>
   );
 }
 
