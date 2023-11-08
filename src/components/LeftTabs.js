@@ -5,6 +5,7 @@ import Tab from 'react-bootstrap/Tab';
 import Addbook from './Addbook';
 import BookList from './BookList';
 import Stock from './BooksStock';
+import BookIssue from './BookIssue';
 
 function LeftTabs() {
     return (
@@ -42,7 +43,9 @@ function LeftTabs() {
                         <Tab.Pane eventKey="third">
                             <Stock/>
                         </Tab.Pane>
-                        <Tab.Pane eventKey="fourth">Fourth tab content</Tab.Pane>
+                        <Tab.Pane eventKey="fourth">
+                            <BookIssue/>
+                        </Tab.Pane>
                         <Tab.Pane eventKey="fifth">Fifth tab content</Tab.Pane>
                     </Tab.Content>
                 </Col>
