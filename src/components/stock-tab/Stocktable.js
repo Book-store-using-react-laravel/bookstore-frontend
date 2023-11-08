@@ -2,6 +2,7 @@ import { Button, Spacer, Input } from '@nextui-org/react';
 import React, { useEffect, useState, useRef } from 'react';
 import { Container } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
+import axios from 'axios';
 
 function Stocktable({ books }) {
   const [visibleBooks, setVisibleBooks] = useState([]);
@@ -51,6 +52,22 @@ function Stocktable({ books }) {
       }
     };
   }, [currentPage, books]);
+
+  // handle delete operation
+  const handleDeleteBook = (bookId) => {
+    // send DELETE request to api
+    axios.delete(`http://localhost:8000/api/books/${bookId}`)
+    .then((response) => {
+      // successful deleted
+      console.log("successfully deleted book id: ", bookId);
+      const updatedBooks = books.filter((book) => book.id !== bookId);
+        setVisibleBooks(updatedBooks.slice(0, currentPage * pageSize));
+    })
+    .catch((error) => {
+      console.error("book is not deleted ", error);
+    })
+  }
+
 
   return (
     <Container>
@@ -119,7 +136,11 @@ function Stocktable({ books }) {
                 </Button>
               </td>
               <td>
-                <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">
+                <Button 
+                  radius="full" 
+                  className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg"
+                  onClick={() => handleDeleteBook(book.id)}
+                >
                   Delete
                 </Button>
               </td>
