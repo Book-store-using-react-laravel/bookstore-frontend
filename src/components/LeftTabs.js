@@ -6,6 +6,7 @@ import Addbook from './Addbook';
 import BookList from './BookList';
 import Stock from './BooksStock';
 import BookIssue from './BookIssue';
+import MemForm from './MemForm';
 
 function LeftTabs() {
     return (
@@ -28,7 +29,9 @@ function LeftTabs() {
                         <Nav.Item>
                             <Nav.Link eventKey="fifth">Settings</Nav.Link>
                         </Nav.Item>
-                        
+                        <Nav.Item>
+                            <MemForm/>
+                        </Nav.Item>
                     </Nav>
                 </Col>
                 <Col sm={9}>
