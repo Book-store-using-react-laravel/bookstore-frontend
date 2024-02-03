@@ -1,6 +1,7 @@
 import React from 'react'
-import { Col, Form, Row } from 'react-bootstrap'
 import { Input } from "@nextui-org/react";
+import { Button, ButtonGroup } from "@nextui-org/react";
+import { FormLabel } from 'react-bootstrap';
 
 function MemForm() {
     const [value, setValue] = React.useState("junior2nextui.org");
@@ -13,15 +14,15 @@ function MemForm() {
         return validateEmail(value) ? false : true;
     }, [value]);
     return (
-        <div className="border flex w-full flex-wrap md:flex-nowrap gap-1">
-            <Input isReadOnly variant='bordered' type="ID" label="Member ID" defaultValue='1' />
-            <Input variant='bordered' type="name" label="Name" placeholder="Enter your name" />
-            <Input variant='bordered' isInvalid={isInvalid} type="email" label="Email" placeholder="Enter your email" 
-                errorMessage={isInvalid && "Please enter a valid email"}
+        <div className="form flex w-full flex-wrap md:flex-nowrap gap-1">
+            <FormLabel>Library Checkout Details</FormLabel>
+            <Input size='sm' isReadOnly variant='bordered' type="ID" label="Member ID" defaultValue='1' />
+            <Input size='sm' variant='bordered' type="name" label="Name" placeholder="Enter your name" />
+            <Input size='sm' variant='bordered' type="email" label="Email" placeholder="Enter your email"
                 onValueChange={setValue}
             />
-            <Input variant='bordered' type="phone" label="Contact Number" placeholder="Enter your phone number" />
-
+            <Input size='sm' variant='bordered' type="phone" label="Contact Number" placeholder="Enter your phone number" />
+            <Button className="formSub" size='sm'>Submit</Button>
         </div>
     )
 }

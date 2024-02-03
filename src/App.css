@@ -143,3 +143,12 @@ h4 {
   background-color: #65451F; 
 } */
 
+.form {
+  margin: 10px;
+  max-width: 280px;
+}
+.formSub{
+  background-color: #65451F;
+  color: #fff;
+  box-shadow: #C8AE7D 1px 1px;
+}
