@@ -1,7 +1,7 @@
 import React from 'react'
 import { Input, Listbox, ListboxItem, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
 import { Button, ButtonGroup } from "@nextui-org/react";
-import { FormLabel } from 'react-bootstrap';
+import { Form, FormLabel } from 'react-bootstrap';
 
 function MemForm() {
     const [value, setValue] = React.useState("junior2nextui.org");
@@ -14,32 +14,34 @@ function MemForm() {
         return validateEmail(value) ? false : true;
     }, [value]);
     return (
-        <div className="form flex w-full flex-wrap md:flex-nowrap gap-1">
-            <FormLabel>Library Checkout Details</FormLabel>
-            <Input size='sm' isReadOnly variant='bordered' type="ID" label="Member ID" defaultValue='1' />
-            <Input size='sm' variant='bordered' type="name" label="Name" placeholder="Enter your name" />
-            <Input size='sm' variant='bordered' type="email" label="Email" placeholder="Enter your email"
-                onValueChange={setValue}
-            />
-            <Input size='sm' variant='bordered' type="phone" label="Contact Number" placeholder="Enter your phone number" />
-            {/* ordered books */}
-            <Popover>
-                <PopoverTrigger>
+        <Form className=''>
+            <div className="form flex flex-wrap md:flex-nowrap gap-1">
+                <FormLabel>Library Checkout Details</FormLabel>
+                <Input size='sm' isReadOnly variant='bordered' type="ID" label="Member ID" defaultValue='1' />
+                <Input size='sm' variant='bordered' type="name" label="Name" placeholder="Enter your name" />
+                <Input size='sm' variant='bordered' type="email" label="Email" placeholder="Enter your email"
+                    onValueChange={setValue}
+                />
+                <Input size='sm' variant='bordered' type="phone" label="Contact Number" placeholder="Enter your phone number" />
+                {/* ordered books */}
+                <Popover>
+                    <PopoverTrigger>
 
-                <Button size="sm">See ordered book details</Button>
-                </PopoverTrigger>
-                <PopoverContent>
-                    <Listbox>
-                        <ListboxItem>book1</ListboxItem>
-                        <ListboxItem>book1</ListboxItem>
-                        <ListboxItem>book1</ListboxItem>
-                        <ListboxItem>book1</ListboxItem>
-                    </Listbox>
-                </PopoverContent>
-            </Popover>
-            {/* Submit button */}
-            <Button className="formSub" size='sm'>Submit</Button>
-        </div>
+                        <Button className='detailBtn' size="sm" variant='faded'>See ordered book details</Button>
+                    </PopoverTrigger>
+                    <PopoverContent>
+                        <Listbox>
+                            <ListboxItem description="book 1 detail">book1</ListboxItem>
+                            <ListboxItem description="book 2 detail">book2</ListboxItem>
+                            <ListboxItem description="book 3 detail">book3</ListboxItem>
+                            <ListboxItem description="book 4 detail">book4</ListboxItem>
+                        </Listbox>
+                    </PopoverContent>
+                </Popover>
+                {/* Submit button */}
+                <Button className="formSub" size='sm'>Submit</Button>
+            </div>
+        </Form>
     )
 }
 

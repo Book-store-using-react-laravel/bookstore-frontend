@@ -147,6 +147,9 @@ h4 {
   margin: 10px;
   max-width: 280px;
 }
+.detailBtn{
+  background-color: #765827;
+}
 .formSub{
   background-color: #65451F;
   color: #fff;
