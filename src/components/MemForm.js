@@ -1,5 +1,5 @@
 import React from 'react'
-import { Input } from "@nextui-org/react";
+import { Input, Listbox, ListboxItem, Popover, PopoverContent, PopoverTrigger } from "@nextui-org/react";
 import { Button, ButtonGroup } from "@nextui-org/react";
 import { FormLabel } from 'react-bootstrap';
 
@@ -22,6 +22,22 @@ function MemForm() {
                 onValueChange={setValue}
             />
             <Input size='sm' variant='bordered' type="phone" label="Contact Number" placeholder="Enter your phone number" />
+            {/* ordered books */}
+            <Popover>
+                <PopoverTrigger>
+
+                <Button size="sm">See ordered book details</Button>
+                </PopoverTrigger>
+                <PopoverContent>
+                    <Listbox>
+                        <ListboxItem>book1</ListboxItem>
+                        <ListboxItem>book1</ListboxItem>
+                        <ListboxItem>book1</ListboxItem>
+                        <ListboxItem>book1</ListboxItem>
+                    </Listbox>
+                </PopoverContent>
+            </Popover>
+            {/* Submit button */}
             <Button className="formSub" size='sm'>Submit</Button>
         </div>
     )

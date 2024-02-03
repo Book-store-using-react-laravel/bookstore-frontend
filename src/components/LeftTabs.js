@@ -7,6 +7,7 @@ import BookList from './BookList';
 import Stock from './BooksStock';
 import BookIssue from './BookIssue';
 import MemForm from './MemForm';
+import { Divider } from '@nextui-org/react';
 
 function LeftTabs() {
     return (
@@ -29,6 +30,7 @@ function LeftTabs() {
                         <Nav.Item>
                             <Nav.Link eventKey="fifth">Settings</Nav.Link>
                         </Nav.Item>
+                        <Divider/>
                         <Nav.Item>
                             <MemForm/>
                         </Nav.Item>
